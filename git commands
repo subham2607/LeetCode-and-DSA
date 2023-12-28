@@ -9,3 +9,9 @@ git pull origin
 
 
 This is end
+
+For Update :- update in code then below steps
+
+git add.
+git commit -m 
+git push

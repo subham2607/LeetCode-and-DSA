@@ -12,6 +12,6 @@ This is end
 
 For Update :- update in code then below steps
 
-git add.
+git add .
 git commit -m 
 git push

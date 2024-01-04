@@ -3,7 +3,7 @@ package lcQuestions;
 import DSAConcepts.TreeNode;
 
 //Important question. concept regarding recursion. 
-public class ParhSum {
+public class ParthSum {
 	TreeNode root;
 	
 	public boolean hasPathSum(TreeNode root, int targetSum) {
@@ -17,7 +17,7 @@ public class ParhSum {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ParhSum LO = new ParhSum();
+		ParthSum LO = new ParthSum();
 		LO.root = new TreeNode(3);
 		LO.root.left = new TreeNode(9);
 		LO.root.right = new TreeNode(20);

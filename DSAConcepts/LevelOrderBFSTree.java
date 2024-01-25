@@ -9,25 +9,43 @@ public class LevelOrderBFSTree {
 	TreeNode root;
 	List<List<Integer>> level = new ArrayList<>();
 	//Solution using Recursion.
-	/*
-	 * public List<List<Integer>> levelOrder(TreeNode root) { int h = height(root);
-	 * 
-	 * for(int i=1 ; i<=h;i++) { List<Integer> ladder = new ArrayList<>();
-	 * levelorderBST(root,i,ladder); level.add(ladder); } return level; } public
-	 * void levelorderBST(TreeNode root,int l,List<Integer> ladder) {
-	 * 
-	 * if(root == null) return; if(l == 1) { ladder.add(root.val); } if(l>1) {
-	 * levelorderBST(root.left,l-1,ladder); levelorderBST(root.right,l-1,ladder); }
-	 * 
-	 * } public int height(TreeNode root) {
-	 * 
-	 * if(root == null) return 0; int lheight = height(root.left); int rheight =
-	 * height(root.right); if(lheight > rheight) { return(lheight +1);
-	 * 
-	 * }else return(rheight + 1);
-	 * 
-	 * }
-	 */
+	
+//	  public List<List<Integer>> levelOrder(TreeNode root) {
+//		  int h = height(root);
+//		  
+//		  for(int i=1 ; i<=h;i++) { 
+//			  List<Integer> ladder = new ArrayList<>();
+//			  levelorderBST(root,i,ladder); 
+//			  level.add(ladder); 
+//			  } 
+//		  return level; 
+//	  } 
+//	  
+//	  public void levelorderBST(TreeNode root,int l,List<Integer> ladder) {
+//	  
+//		  if(root == null) return; 
+//		  if(l == 1) { 
+//			  ladder.add(root.val);
+//		  } 
+//		  if(l>1) {
+//			  levelorderBST(root.left,l-1,ladder); 
+//			  levelorderBST(root.right,l-1,ladder); 
+//		  }
+//		  
+//	  } 
+//	  
+//	  public int height(TreeNode root) {
+//	  
+//		  if(root == null) return 0; 
+//		  int lheight = height(root.left); 
+//		  int rheight = height(root.right); 
+//		  if(lheight > rheight) { 
+//			  return(lheight +1);
+//		  
+//		  }else return(rheight + 1);
+//	  
+//	  }
+	 
 	//Solution using queue
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		Queue<TreeNode> queue = new LinkedList<>();

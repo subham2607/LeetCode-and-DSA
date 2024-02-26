@@ -23,13 +23,10 @@ public class KeysAndRoom841 {
 					key.push(newKey);
 				}
 			}
-			
 		}
 		for(boolean Visited : seen) {
 			if(Visited == false) return false;
-		}
-		
+		}	
 		return true;
 	}
-
 }
